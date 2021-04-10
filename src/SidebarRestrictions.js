@@ -1,20 +1,19 @@
 import React from 'react';
 
 class SidebarRestrictions extends React.Component {
+    
     constructor(props) {
         super(props);
         this.state = {
-            brand: "Ford",
-            model: "Mustang",
-            color: "red",
-            year: 1964
+            expanded: props.expanded,
         };
     }
-    
+
     render() {
         return (
             <div>
-                <h1>My Car</h1>
+                <h1>My Car is {this.props.expanded}</h1>
+                <button onClick={super.test}></button>
             </div>
         );
     }

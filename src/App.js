@@ -2,6 +2,7 @@ import './App.css';
 import SidebarRestrictions from "./SidebarRestrictions";
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -9,7 +10,7 @@ function App() {
           MenuMe
         </p>
       </header>
-      <SidebarRestrictions/>
+      <SidebarRestrictions expanded={"true"}/>
     </div>
   );
 }
