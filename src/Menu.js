@@ -12,7 +12,10 @@ class Restaurant extends React.Component {
   render() {
     return (
       <div>
-        <h1>My Car</h1>
+        <h1>
+          Name: {this.props.mealTime}
+          <br />
+        </h1>
       </div>
     );
   }

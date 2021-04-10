@@ -1,4 +1,8 @@
 import React from "react";
+import Button from "@material-ui/core/Button";
+// import IconButton from "@material-ui/core/IconButton";
+// import MenuIcon from "@material-ui/core/MenuIcon";
+import "./Sidebar.css";
 
 class SidebarRestrictions extends React.Component {
   constructor(props) {
@@ -11,9 +15,22 @@ class SidebarRestrictions extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>My Car is {this.props.expanded}</h1>
-        <button onClick={super.test}></button>
+      <div className="sidebar">
+        {/* <IconButton
+          edge="start"
+          className="menuButton"
+          color="inherit"
+          aria-label="menu"
+        >
+          <MenuIcon />
+        </IconButton> */}
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={this.props.addElementFunction}
+        >
+          submit
+        </Button>
       </div>
     );
   }

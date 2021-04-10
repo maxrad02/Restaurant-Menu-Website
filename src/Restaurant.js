@@ -16,7 +16,22 @@ class Restaurant extends React.Component {
   render() {
     return (
       <div>
-        <h1>My Car</h1>
+        <h1>
+          Name: {this.props.name}
+          <br />
+        </h1>
+        <h2>
+          Location: {this.props.location}
+          <br />
+          Image: <img src={this.props.imageURL} alt="asdad"></img>
+          <br />
+          websiteURL: {this.props.websiteURL}
+          <br />
+          costLevel: {this.props.costLevel}
+          <br />
+          foodCategory: {this.props.foodCategory}
+          <br />
+        </h2>
       </div>
     );
   }
